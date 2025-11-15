@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission Form</title>
+</head>
+
+<body>
+
+    <h1>Online Admission Application</h1>
+
+    <form action="#" method="POST">
+
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+
+            <label>
+                Full Name:<br>
+                <input type="text" name="fullName" required maxlength="60" placeholder="Max 60 characters"><br><br>
+            </label>
+
+            <label>
+                Email Address:<br>
+                <input type="email" name="email" required placeholder="example@email.com"><br><br>
+            </label>
+
+
+            <label>
+                Date of Birth:<br>
+                <input type="date" name="dob" required><br><br>
+            </label>
+
+
+            <p>Gender (Required):</p>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other"> Other
+            </label>
+            <br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+
+            <label>
+                Highest Qualification:<br>
+                <input type="text" name="qualification" required placeholder="e.g., HSC, Diploma"><br><br>
+            </label>
+
+
+            <label>
+                Preferred Department (Course Selection):<br>
+                <select name="department" required>
+                    <option value="" disabled selected>-- Select a Department --</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="eee">Electrical Engineering</option>
+                    <option value="bba">Business Administration</option>
+                    <option value="art">Arts & Humanities</option>
+                </select>
+            </label><br><br>
+
+
+            <p>Interests (Select all that apply):</p>
+            <label>
+                <input type="checkbox" name="interest_1" value="coding"> Coding
+            </label><br>
+            <label>
+                <input type="checkbox" name="interest_2" value="research"> Research
+            </label><br>
+            <label>
+                <input type="checkbox" name="interest_3" value="sports"> Sports
+            </label>
+            <br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Document Upload</legend>
+
+
+            <label>
+                Upload Academic Transcript:<br>
+                <input type="file" name="transcriptFile" required><br><br>
+            </label>
+
+
+            <label>
+                Upload Resume/CV:<br>
+                <input type="file" name="resumeFile" required><br><br>
+            </label>
+        </fieldset>
+
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            padding: 15px;
+            border: 3px solid #333;
+            background-color: #fff;
+        }
+
+        .box h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+
+        .overflow-visible {
+            overflow: visible;
+        }
+
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .box p {
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Overflow Property Demonstration</h1>
+
+    <div class="container">
+        <div class="box overflow-visible">
+            <h2>overflow: visible</h2>
+            <p>This is a demonstration of the overflow: visible property. When content exceeds the fixed dimensions of
+                the container, it will overflow and be visible outside the box boundaries. This can cause layout issues
+                as the content spills over into surrounding elements.</p>
+
+        </div>
+
+        <div class="box overflow-hidden">
+            <h2>overflow: hidden</h2>
+            <p>This demonstrates the overflow: hidden property. When content exceeds the container dimensions, it is
+                clipped and hidden. No scrollbars appear, and users cannot see or access the hidden content.</p>
+
+        </div>
+
+        <div class="box overflow-scroll">
+            <h2>overflow: scroll</h2>
+            <p>This shows the overflow: scroll property. Scrollbars (both horizontal and vertical) are always visible,
+                regardless of whether the content actually overflows or not.</p>
+
+        </div>
+
+        <div class="box overflow-auto">
+            <h2>overflow: auto</h2>
+            <p>This demonstrates the overflow: auto property. Scrollbars appear automatically only when the content
+                actually overflows the container dimensions.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

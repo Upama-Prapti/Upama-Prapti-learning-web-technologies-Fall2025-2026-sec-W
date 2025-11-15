@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website with Contact Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            min-height: 200vh;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 20px 0;
+            color: #666;
+        }
+
+        .contact-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border: 2px solid #45a049;
+            border-radius: 8px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-widget:hover {
+            background-color: #45a049;
+        }
+
+        .contact-widget h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+
+        .contact-widget p {
+            margin: 8px 0;
+            color: white;
+        }
+
+        .contact-widget a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-widget a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to Our Company Website</h1>
+        <p>We have experience on software development, product design and web development.</p>
+
+    </div>
+
+    <div class="contact-widget">
+        <h3>Contact Us</h3>
+        <p>Phone: <a href="tel:01915631641">01915631641</a></p>
+        <p>Email: <a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .product-box {
+            display: inline-block;
+            width: 280px;
+            border: 2px solid #ddd;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .product-box:hover {
+            outline: 3px solid #4CAF50;
+            outline-offset: 5px;
+        }
+
+        .product-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .product-box h2 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-box p {
+            color: #666;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .product-box .price {
+            color: #e74c3c;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .product-box a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .product-box a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Laptop">
+        <h2>Laptop</h2>
+        <p>High-performance laptop with latest processor and long battery life. Perfect for work and entertainment.</p>
+        <p class="price">$899.99</p>
+        <a href="#buy">Buy Now</a>
+    </div>
+
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Headphones">
+        <h2>Headphones</h2>
+        <p>Premium wireless headphones with noise cancellation and crystal-clear sound quality for music lovers.</p>
+        <p class="price">$199.99</p>
+        <a href="#buy">Buy Now</a>
+    </div>
+
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Smartwatch">
+        <h2>Smartwatch</h2>
+        <p>Feature-rich smartwatch with fitness tracking, heart rate monitor, and smartphone connectivity.</p>
+        <p class="price">$299.99</p>
+        <a href="#buy">Buy Now</a>
+    </div>
+</body>
+</html>
+
