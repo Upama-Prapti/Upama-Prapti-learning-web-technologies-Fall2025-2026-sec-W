@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Student Information System</h2>
+    
+    <div>
+        <label>Student's Name:</label>
+        <input type="text" id="studentName">
+        <span id="nameError"></span>
+    </div>
+    <br>
+    
+    <div>
+        <label>Student's Marks:</label>
+        <input type="text" id="studentMarks">
+        <span id="marksError"></span>
+    </div>
+    <br>
+    
+    <button onclick="validateAndSubmit()">Submit</button>
+    
+    <br><br>
+    
+    <table border="1" id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </table>
+    
+    <script src="student.js"></script>
+</body>
+</html>
+
